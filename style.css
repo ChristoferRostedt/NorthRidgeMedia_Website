@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+    font-family: system-ui;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+header {
+    min-height: 400px;
+    background: rgb(171, 171, 171);
+    text-align: center;
+}
