@@ -83,3 +83,9 @@ header {
     background: rgb(171, 171, 171);
     /* text-align: center; */
 }
+
+/* TODO:
+    make text srink after a surtain point */
+@media (max-width: 600px) {
+
+}
