@@ -12,31 +12,30 @@ body {
 }
 
 h1 {
-    padding: 1rem;
-    margin: 1rem;
+    /* padding: 1rem; */
+    /* margin: 1rem; */
     font-size: 64px;
-    font-family: Alumni Sans SC;
+    /* font-family: Alumni Sans SC; */
     
 }
 
 h2 {
-    padding: 1rem;
-    margin: 1rem;
+    /* padding: 1rem; */
+    /* margin: 1rem; */
     font-size: 36px;
-    font-family: Alumni Sans SC;
     
 }
 
 h3 {
-    padding: 1rem;
+    /* padding: 1rem; */
     margin: 1rem;
     font-size: 18px;
-    font-family: Alumni Sans SC;
     
 }
 
 header {
     min-height: 200px;
+    padding: 2rem;
     /* background: rgb(171, 171, 171); */
     /* text-align: center; */
 }
@@ -58,13 +57,20 @@ header {
     left: 30px;
 }
 
-.photobox {
-    display: block;
-    padding: 2rem;
-    margin: 2rem;
-    background-color: rgb(255, 255, 255);
-    border-radius: 1rem;
-    transition-duration: 0.3s;
+div.scroll-container {
+    /* margin: 1rem; */
+    overflow: scroll;
+    white-space: nowrap;
+    padding: 10px;
+    /* display: block; */
+    /* background-color: rgb(255, 255, 255); */
+    /* border-radius: 1rem; */
+    /* transition-duration: 0.3s; */
+}
+
+div.scroll-container img {
+    padding: 10px;
+    max-height: 300px;
 }
 
 .photoSlides *{
@@ -78,7 +84,7 @@ header {
     transition-duration: 0.3s;
 }
 
-.footer {
+footer {
     min-height: 50px;
     background: rgb(171, 171, 171);
     /* text-align: center; */
@@ -86,6 +92,27 @@ header {
 
 /* TODO:
     make text srink after a surtain point */
-@media (max-width: 600px) {
+@media (max-width: 660px) {
+    header {
+        min-height: 1vw;
+    }
+    h1 {
+        font-size: 9vw;
+        text-align: center;
+    }
+    header * h2 {
+        font-size: 4vw;
+        text-align: center;
+    }
 
+    footer {
+        min-height: 6vw;
+        bottom: 10px;
+    }
+    h2 {
+        font-size: 4vw;
+        padding-left: 1rem;
+        text-align: left;
+        height: fit-content;
+    }
 }
