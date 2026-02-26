@@ -70,7 +70,7 @@ div.scroll-container {
 
 div.scroll-container img {
     padding: 10px;
-    max-height: 300px;
+    max-height: 500px;
 }
 
 .photoSlides *{
@@ -92,7 +92,7 @@ footer {
 
 /* TODO:
     make text srink after a surtain point */
-@media (max-width: 660px) {
+@media (max-width: 767px) {
     header {
         min-height: 1vw;
     }
@@ -115,4 +115,35 @@ footer {
         text-align: left;
         height: fit-content;
     }
+
+    div.scroll-container img {
+    padding: 10px;
+    max-height: 300px;
+    }
+    
 }
+
+/* @media (max-width: px) {
+    header {
+        min-height: 1vw;
+    }
+    h1 {
+        font-size: 9vw;
+        text-align: center;
+    }
+    header * h2 {
+        font-size: 4vw;
+        text-align: center;
+    }
+
+    footer {
+        min-height: 6vw;
+        bottom: 10px;
+    }
+    h2 {
+        font-size: 4vw;
+        padding-left: 1rem;
+        text-align: left;
+        height: fit-content;
+    }
+} */
