@@ -33,11 +33,9 @@ h3 {
     
 }
 
-header {
+/* header {
     min-height: 200px;
     padding: 2rem;
-    /* background: rgb(171, 171, 171); */
-    /* text-align: center; */
 }
 
 .navbar {
@@ -45,7 +43,7 @@ header {
     margin: 0;
     padding: 1rem;
     overflow: hidden;
-}
+} */
 
 /* .navbar > div {
     
@@ -57,6 +55,52 @@ header {
     left: 30px;
 }
 
+/* Grid Layout */
+.container {
+    display: grid;
+    grid-template-areas:
+        "header social"
+        "content content"
+        "footer footer";
+    grid-template-columns: 4fr 1fr;
+    gap: 3px;
+    /* background-color: blue; */
+    padding: 5px;
+}
+
+.container div {
+    /* background-color: aqua; */
+    padding: 10px;
+}
+
+.container div.header {
+    grid-area: header;
+    /* text-align: center; */
+}
+
+.container div.subheader {
+    grid-area: subheader;
+}
+
+.container div.social {
+    grid-area: social;
+    font-size: 16px;
+    display: flex;           /* Enables flexbox */
+    flex-direction: column;  /* Keeps links stacked vertically */
+    justify-content: center; /* Centers vertically */
+    align-items: left;     /* Left horizontally */
+    gap: 10px;
+}
+
+.container div.content {
+    grid-area: content;
+}
+
+.container div.footer {
+    grid-area: footer;
+}
+
+/* scrolling boxes */
 div.scroll-container {
     /* margin: 1rem; */
     overflow: scroll;
@@ -92,18 +136,33 @@ footer {
 
 /* TODO:
     make text srink after a surtain point */
+
 @media (max-width: 767px) {
+    .container {
+    grid-template-areas:
+        "header header"
+        "social social"
+        "content content"
+        "footer footer";
+    grid-template-columns: 2fr 1fr;
+    }
+
+    .container div.social {
+        align-items: center;
+    }
+
     header {
         min-height: 1vw;
     }
+
     h1 {
         font-size: 9vw;
         text-align: center;
     }
-    header * h2 {
+    /* header * h2 {
         font-size: 4vw;
         text-align: center;
-    }
+    } */
 
     footer {
         min-height: 6vw;
@@ -112,7 +171,7 @@ footer {
     h2 {
         font-size: 4vw;
         padding-left: 1rem;
-        text-align: left;
+        text-align: center;
         height: fit-content;
     }
 
@@ -122,6 +181,8 @@ footer {
     }
     
 }
+
+
 
 /* @media (max-width: px) {
     header {
