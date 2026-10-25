@@ -1,4 +1,4 @@
-# Portfolio Website for North Ridge Media
+# North Ridge Media - Website
 A minimalistic photography portfolio build for North Ridge Media. Photos are organized into groups of events in series.
 
 Live website:
